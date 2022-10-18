@@ -1,0 +1,51 @@
+.leaderboard-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
+.leaderboard-title {
+  margin-left: 3%;
+}
+
+.refresh-cont {
+  display: flex;
+  width: 130%;
+}
+
+.refresh-button {
+  align-self: center;
+  height: 20%;
+  padding: 2%;
+  margin-left: 18%;
+}
+
+.add-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.scores-cont {
+  border: 1px solid black;
+  width: 130%;
+}
+
+input {
+  margin: 8%;
+  height: 10%;
+  width: 100%;
+}
+
+.submit-cont {
+  display: flex;
+}
+
+.submit-button {
+  width: 40%;
+  align-self: flex-end;
+  padding: 2%;
+  margin-top: 8%;
+}
+
+.add-title {
+  margin-left: 8%;
+}
