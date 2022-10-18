@@ -10,6 +10,7 @@
 - CSS
 - JavaScript
 - Linters
+- Webpack
 
 ## Live Demo
 
