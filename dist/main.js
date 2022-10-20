@@ -125,7 +125,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_output_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/output.js */ \"./src/modules/output.js\");\n/* harmony import */ var _modules_output_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_output_js__WEBPACK_IMPORTED_MODULE_1__);\n\r\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_output_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/output.js */ \"./src/modules/output.js\");\n/* harmony import */ var _modules_output_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_output_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_input_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/input.js */ \"./src/modules/input.js\");\n/* harmony import */ var _modules_input_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_input_js__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/input.js":
+/*!******************************!*\
+  !*** ./src/modules/input.js ***!
+  \******************************/
+/***/ (() => {
+
+eval("document.getElementById('submit-button').addEventListener('click', () => {\n  const input1 = document.querySelector('#input1');\n  const input2 = document.querySelector('#input2');\n\n  const data = {\n    user: input1.value,\n    score: input2.value,\n  };\n\n  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77714/scores/', {\n    method: 'POST',\n    body: JSON.stringify(data),\n    headers: { 'Content-type': 'application/json; charset=UTF-8' },\n  })\n    .then((response) => response.json())\n    .then((json) => console.log(json))\n    .catch((err) => console.log(err));\n  console.log('papita');\n});\n\n\n//# sourceURL=webpack://webpack-demo/./src/modules/input.js?");
 
 /***/ }),
 
@@ -135,7 +145,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \*******************************/
 /***/ (() => {
 
-eval("const aplication = document.querySelector('.scores-cont') \r\n\r\nconst leaderboard = (e) => {\r\n    for(let i = 0; i < e.result.length; i++){\r\n        const p = document.createElement('p')\r\n        p.innerHTML = e.result[i].user + \" \" + e.result[i].score\r\n        aplication.appendChild(p);\r\n    }\r\n  }\r\n\r\n  \r\n  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77714/scores/')\r\n  .then(response => response.json())\r\n  .then(json => leaderboard(json))\r\n  .catch(err => console.log(err))\n\n//# sourceURL=webpack://webpack-demo/./src/modules/output.js?");
+eval("const aplication = document.querySelector('.scores-cont');\n\nconst leaderboard = (e) => {\n  for (let i = 0; i < e.result.length; i++) {\n    const p = document.createElement('p');\n    p.innerHTML = `${e.result[i].user} ${e.result[i].score}`;\n    aplication.appendChild(p);\n  }\n};\n\nfetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77714/scores/')\n  .then((response) => response.json())\n  .then((json) => leaderboard(json))\n  .catch((err) => console.log(err));\n\ndocument.getElementById('refresh-btn').addEventListener('click', () => {\n  location.reload();\n});\n\n//# sourceURL=webpack://webpack-demo/./src/modules/output.js?");
 
 /***/ })
 

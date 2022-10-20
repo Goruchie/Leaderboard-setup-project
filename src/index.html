@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaderboard project</title>
     <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="page-cont">
     <h1 class="leaderboard-title">Leaderboard</h1>
       <section class="leaderboard-cont">
         <div class="recent-cont">
           <div class="refresh-cont">
             <h2 class="recent-title">Recent scores</h2>
+            <div class="refresh-btn-cont">
             <button id='refresh-btn' class="refresh-button">Refresh</button>
+            </div>
           </div>
             <div class="scores-cont">
                 <!-- <p>Name: 100</p>
@@ -32,6 +36,7 @@
             <button id='submit-button' class="submit-button">Submit</button>              
           </div>
       </section>
+    </div>
       <script src="index.js" type="module" ></script>
 </body>
 </html>

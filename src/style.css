@@ -1,38 +1,58 @@
+* {
+  font-family: 'Comic Neue', cursive;
+}
+
+.page-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
 .leaderboard-cont {
   display: flex;
+  margin-top: 6%;
   justify-content: space-around;
 }
 
 .leaderboard-title {
   margin-left: 3%;
+  font-size: 80px;
 }
 
 .refresh-cont {
   display: flex;
-  width: 130%;
+  align-items: center;
+  gap: 30%;
 }
 
 .refresh-button {
   align-self: center;
   height: 20%;
-  padding: 2%;
-  margin-left: 18%;
+  padding: 34%;
+  background-color: white;
+  box-shadow: 2.5px 5px;
+  border: 3px solid black;
+  font-size: 15px;
 }
 
 .add-cont {
   display: flex;
   flex-direction: column;
+  width: 35%;
 }
 
 .scores-cont {
-  border: 1px solid black;
-  width: 130%;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
+  border: 3px solid black;
   margin: 8%;
   height: 10%;
-  width: 100%;
+  width: 85%;
+  font-size: 18px;
+  padding: 2%;
 }
 
 .submit-cont {
@@ -40,12 +60,47 @@ input {
 }
 
 .submit-button {
-  width: 40%;
   align-self: flex-end;
-  padding: 2%;
+  padding: 4%;
   margin-top: 8%;
+  margin-right: 4%;
+  background-color: white;
+  box-shadow: 2.5px 5px;
+  border: 3px solid black;
+  font-size: 15px;
 }
 
 .add-title {
   margin-left: 8%;
+}
+
+.recent-title,
+.add-title {
+  font-size: 40px;
+}
+
+#input1 {
+  margin-top: 0%;
+}
+
+.recent-cont {
+  width: 35%;
+}
+
+p:nth-child(1n) {
+  align-items: center;
+  font-size: 18px;
+  border: 3px solid black;
+  margin: 0%;
+  padding: 2%;
+  background-color: rgb(255, 255, 255);
+}
+
+p:nth-child(2n) {
+  background-color: rgb(212, 212, 212);
+  align-items: center;
+  font-size: 18px;
+  border: 3px solid black;
+  margin: 0%;
+  padding: 2%;
 }
