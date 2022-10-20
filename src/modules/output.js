@@ -8,7 +8,7 @@ const leaderboard = (e) => {
   }
 };
 
-fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77714/scores/')
+fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77715/scores/')
   .then((response) => response.json())
   .then((json) => leaderboard(json))
   .catch((err) => console.log(err));

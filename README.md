@@ -1,5 +1,3 @@
-# Leaderboard-setup-project
-
 # Leaderboard-setup-project![](https://img.shields.io/badge/Microverse-blueviolet)
 
 > In this activity I seted up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules, and API.
@@ -11,6 +9,9 @@
 - JavaScript
 - Linters
 - Webpack
+- JSON
+- ES6
+- API
 
 ## Live Demo
 
@@ -18,11 +19,11 @@
  
 ## Getting Started
 
-**You can download, take a look and edit this project if you want to, but first make sure that you have the requirements to do it**
+**[Link to the repo](https://github.com/Goruchie/Leaderboard-setup-project.git). You can download, take a look and edit this project if you want to, but first make sure that you have the requirements to do it.**
 
 
 
-To get a local copy up and running follow these simple example steps.
+## To get a local copy up and running follow these simple example steps.
 
 ### Install Git.
 
@@ -32,6 +33,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Copy this repository link and clone it to your local machine.
 
+### Installation of Node.js, Node Package Manager, webpack module bundler, Jest testing environment, and Babel.
+
+### [The setup of webpack](https://webpack.js.org/guides/getting-started/)
 
 
 ## Authors

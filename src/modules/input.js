@@ -3,11 +3,11 @@ document.getElementById('submit-button').addEventListener('click', () => {
   const input2 = document.querySelector('#input2');
 
   const data = {
-    user: input1.value,
+    user: `${input1.value}:`,
     score: input2.value,
   };
 
-  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77714/scores/', {
+  fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/77715/scores/', {
     method: 'POST',
     body: JSON.stringify(data),
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
