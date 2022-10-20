@@ -19,8 +19,7 @@
  
 ## Getting Started
 
-**[Link to the repo](https://github.com/Goruchie/Leaderboard-setup-project.git)**
-**You can download, take a look and edit this project if you want to, but first make sure that you have the requirements to do it**
+**[Link to the repo](https://github.com/Goruchie/Leaderboard-setup-project.git). You can download, take a look and edit this project if you want to, but first make sure that you have the requirements to do it.**
 
 
 
